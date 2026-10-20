@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victoria W&amp;T Trade</title>
+  <meta name="description" content="Free one-on-one trading advice by DM on Telegram and Discord, and live trading on YouTube.">
+  <meta name="theme-color" content="#05070d">
+  <meta property="og:title" content="Victoria W&amp;T Trade">
+  <meta property="og:description" content="Free one-on-one trading advice by DM on Telegram and Discord, and live trading on YouTube.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2305070d'/><text x='50%' y='56%' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='700' font-size='36' fill='%2300ff9d'>V</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Her links live in config.js. Edit that file, not this one, to add Telegram, Discord and other socials. -->
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a href="#top" class="brand">Victoria <span class="neon">W&amp;T</span> Trade</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#live">Live</a>
+      <a class="btn btn-small" href="#advice">Free advice</a>
+    </nav>
+  </header>
+
+  <!-- ============ LIVE MARKET TICKER ============
+       A free TradingView widget that shows live prices.
+       To change the markets, edit the "symbols" list. To remove the ticker, delete this whole block. -->
+  <div class="ticker">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">Track all markets on TradingView</a></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+        "symbols": [
+          { "proName": "FOREXCOM:SPXUSD", "title": "S&P 500" },
+          { "proName": "FOREXCOM:NSXUSD", "title": "US 100" },
+          { "proName": "FX_IDC:EURUSD", "title": "EUR/USD" },
+          { "proName": "OANDA:XAUUSD", "title": "Gold" },
+          { "proName": "BITSTAMP:BTCUSD", "title": "Bitcoin" },
+          { "proName": "BITSTAMP:ETHUSD", "title": "Ethereum" }
+        ],
+        "showSymbolLogo": true,
+        "isTransparent": true,
+        "displayMode": "adaptive",
+        "colorTheme": "dark",
+        "locale": "en"
+      }
+      </script>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <svg class="hero-chart" id="hero-chart" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+      <div class="hero-inner">
+        <!-- To use her photo: put it in an images/ folder and replace the div below with
+             <img class="avatar" src="images/victoria.jpg" alt="Victoria"> -->
+        <div class="avatar-ring">
+          <div class="avatar avatar-initials" aria-hidden="true">V</div>
+        </div>
+
+        <p class="eyebrow"><span class="dot"></span>Free trading advice</p>
+        <h1>Victoria <span class="neon">W&amp;T</span> Trade</h1>
+        <p class="tagline">Free one-on-one trading advice in my DMs on Telegram and Discord. Watch me trade live on YouTube.</p>
+
+        <div class="hero-actions">
+          <a href="#advice" class="btn">Get free advice</a>
+          <a href="#live" class="btn btn-ghost">Watch me trade</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <p class="label">About</p>
+      <h2>Trading advice, <span class="neon">for free</span></h2>
+      <p class="lead">
+        Hi, I'm Victoria. I give free trading advice one-on-one: send me a message on Telegram or
+        Discord with your questions. On YouTube I trade live, so you can watch how I trade in real time.
+      </p>
+      <div class="stats">
+        <div><span>Price</span><strong>FREE</strong></div>
+        <div><span>Advice</span><strong>1-ON-1</strong></div>
+        <div><span>Trading</span><strong>LIVE</strong></div>
+      </div>
+    </section>
+
+    <!-- ============ FREE ADVICE (Telegram / Discord) ============ -->
+    <!-- Her Telegram and Discord come from config.js. Until they're added, each card shows "Coming soon". -->
+    <section id="advice" class="section">
+      <p class="label">Free advice</p>
+      <h2>Get free <span class="neon">trading advice</span></h2>
+      <p class="section-sub">Send me a DM on Telegram or Discord for free, one-on-one advice.</p>
+
+      <div class="grid steps">
+        <article class="card" style="--c: var(--cyan)">
+          <span class="card-num">01</span>
+          <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Message me</h3>
+          <p>Send me a DM on Telegram or Discord. It's free.</p>
+        </article>
+        <article class="card" style="--c: var(--pink)">
+          <span class="card-num">02</span>
+          <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></div>
+          <h3>Ask your question</h3>
+          <p>Tell me about the trade, setup or market you want help with.</p>
+        </article>
+        <article class="card" style="--c: var(--green)">
+          <span class="card-num">03</span>
+          <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 17 6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+          <h3>Get free advice</h3>
+          <p>Get my take on it, one-on-one.</p>
+        </article>
+      </div>
+
+      <div class="community">
+        <div class="community-card is-soon" style="--c: #26a5e4" data-link="telegram" data-cta="Message me on Telegram">
+          <span class="community-icon" data-icon="telegram"></span>
+          <h3>Telegram</h3>
+          <p>Message me directly for free trading advice.</p>
+          <span class="community-cta">Coming soon</span>
+        </div>
+        <div class="community-card is-soon" style="--c: #5865f2" data-link="discord" data-cta="Message me on Discord">
+          <span class="community-icon" data-icon="discord"></span>
+          <h3>Discord</h3>
+          <p>Send me a DM on Discord for free trading advice.</p>
+          <span class="community-cta">Coming soon</span>
+        </div>
+      </div>
+
+      <p class="safety">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4M12 16h.01"/></svg>
+        <span><strong>Stay safe:</strong> only message me through the links on this page. Fake accounts often copy
+        trading profiles, so never share your passwords or login details with anyone.</span>
+      </p>
+    </section>
+
+    <!-- ============ LIVE TRADING (YouTube) ============ -->
+    <!-- The video shown here comes from "featuredStream" in config.js. -->
+    <section id="live" class="section">
+      <p class="label">Live trading</p>
+      <h2>Watch me <span class="neon">trade live</span></h2>
+      <p class="section-sub">On YouTube I trade live, so you can see how I read the market and take my trades in real time.</p>
+      <div class="video">
+        <iframe
+          id="stream"
+          src="https://www.youtube-nocookie.com/embed/BWR4wsXINzU"
+          title="Victoria W&amp;T Trade live trading stream"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+      <div class="video-cta">
+        <a class="btn" data-yt="subscribe" href="https://www.youtube.com/@VictoriaW_T?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a>
+        <a class="btn btn-ghost" data-yt="streams" href="https://www.youtube.com/@VictoriaW_T/streams" target="_blank" rel="noopener">All live streams</a>
+      </div>
+      <p class="video-note">Got a question about a trade? <a href="#advice">Message me for free advice.</a></p>
+    </section>
+
+    <!-- ============ FOLLOW ============ -->
+    <!-- This list is built from config.js: only links that are filled in appear. -->
+    <section id="connect" class="section connect">
+      <p class="label">Follow</p>
+      <h2>Stay <span class="neon">connected</span></h2>
+      <p class="section-sub">Subscribe to catch my next live trading stream.</p>
+      <div class="links" id="links">
+        <a class="link is-primary" href="https://www.youtube.com/@VictoriaW_T?sub_confirmation=1" target="_blank" rel="noopener">
+          <span>YouTube</span><em>@VictoriaW_T</em>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="disclaimer">
+      <strong>Risk disclaimer:</strong> The free advice I share in DMs, in my streams and on this site is my
+      personal opinion, for educational purposes only. It is not professional financial advice. Trading involves
+      significant risk and you can lose money. Only trade with money you can afford to lose, and do your own research.
+    </p>
+    <p>&copy; <span id="year">2026</span> Victoria W&amp;T Trade. All rights reserved.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
