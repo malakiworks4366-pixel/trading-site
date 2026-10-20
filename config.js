@@ -8,8 +8,8 @@
    ===================================================================== */
 window.SITE = {
   // Free trading advice by DM
-  telegram: "",   // her Telegram username, e.g. "@username" (or a link like "https://t.me/username")
-  discord: "",    // her Discord username, e.g. "victoria_wt", or a server invite like "https://discord.gg/abc123"
+  telegram: "t.me/ sF9WX6V24rRlMzRi",   // her Telegram username, e.g. "@username" (or a link like "https://t.me/username")
+  discord: "discord.com/invite/4scsVXCD3X",    // her Discord username, e.g. "victoria_wt", or a server invite like "https://discord.gg/abc123"
 
   // YouTube: live trading streams
   youtube: "https://www.youtube.com/@VictoriaW_T",
